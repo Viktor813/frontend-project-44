@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
+import { getInt } from "./helper.js";
 export const brainivn = () => {
   console.log('Welcome to the Brain Games!')
   const name = readlineSync.question('May I have your name? ');
   const greeting = `Hello, ${name}!`
   console.log(greeting);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const getRamdemint = () => {
-    return Math.floor(Math.random() * 100)
-  }
+
   let wins = 0
   while (wins < 3) {
 
