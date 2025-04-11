@@ -2,4 +2,4 @@
 
 import gameEngine from "../src/engine.js";
 
-gameEngine("even");
+gameEngine("gcd");

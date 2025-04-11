@@ -1,0 +1,1 @@
+export const getInt = (limit = 100) => Math.floor(Math.random() * limit);  
