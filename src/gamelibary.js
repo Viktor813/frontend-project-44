@@ -1,6 +1,7 @@
 import gameCalc from "./brain-calc.js";
 import gameEven from "./brain-even.js";
 import gameProgression from "./brain-progression.js";
+import gameGcd from "./brain-gcd.js";
 
 export default {
     "calc": {
@@ -14,5 +15,9 @@ export default {
     "progression": {
         desc: 'What number is missing in the progression?',
         rules: gameProgression,
+    },
+    "gcd": {
+        desc: 'What number is missing in the progression?',
+        rules: gameGcd,
     },
 };

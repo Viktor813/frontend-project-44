@@ -15,7 +15,7 @@ export default (game) => {
         const { question, correctAnswer } = rules();
         console.log(`Question: ${question}`);
         const answer = readlineSync.question(`Your answer: `);
-        if (answer.toLowerCase() === correctAnswer) {
+        if (answer.toLowerCase() === correctAnswer.toString().toLowerCase()) {
             console.log(`Correct!`);
             wins += 1;
         } else {
