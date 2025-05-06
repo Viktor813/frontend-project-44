@@ -2,6 +2,7 @@ import gameCalc from "./brain-calc.js";
 import gameEven from "./brain-even.js";
 import gameProgression from "./brain-progression.js";
 import gameGcd from "./brain-gcd.js";
+import gamePrime from './brain-prime.js'
 
 export default {
     "calc": {
@@ -20,4 +21,8 @@ export default {
         desc: 'What number is missing in the progression?',
         rules: gameGcd,
     },
+    "prime": {
+        desc: 'What number is missing in the progression?',
+        rules: gamePrime,
+    }
 };

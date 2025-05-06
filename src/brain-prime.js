@@ -2,14 +2,12 @@ import { getInt } from "./helper.js";
 
 export default () => {
    
-    const number1 = getInt();
+    const question = getInt();
 
-    const question = `Question ${number1} ${number2}`;
-    let correctAnswer = 1;
-    let minNumber = number1 > number2 ? number2:number1;
-    for (let i = 2; i <= number1; i +=1){
-        if (number1 % i === 0 && number2 % i === 0) {
-                correctAnswer = i;
+    let correctAnswer = "yes";
+    for (let i = 2; i < question; i +=1){
+        if (question % i === 0) {
+                correctAnswer = 'no';
         }
     }
     return {question, correctAnswer};
